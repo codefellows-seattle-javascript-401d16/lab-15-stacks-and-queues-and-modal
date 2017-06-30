@@ -7,6 +7,7 @@ module.exports = class Stack {
     this.head = null;
   }
 
+  // Big O: O(1)
   push(value) {
     let next = new SLL(value);
     if(!value)
@@ -19,6 +20,7 @@ module.exports = class Stack {
     return this;
   }
 
+  // Big O: O(n)
   pop() {
     if(!this.head)
       return;
