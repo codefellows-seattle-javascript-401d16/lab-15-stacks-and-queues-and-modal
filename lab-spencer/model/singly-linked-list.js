@@ -9,7 +9,7 @@ module.exports = class SLL {
   // Big O: O(n)
   appendNode(node) {
     if(!(node instanceof SLL))
-      throw new Error('Must be an instance of SLL');
+      return null;
     if(!this.next) {
       this.next = node;
       return;
@@ -20,7 +20,7 @@ module.exports = class SLL {
   // Big O: O(n)
   removeNode(node) {
     if(!(node instanceof SLL))
-      throw new Error('Must be an instance of SLL');
+      return null;
     let prev = this;
     let current = prev.next;
     while(prev) {

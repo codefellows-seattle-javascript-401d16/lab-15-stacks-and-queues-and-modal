@@ -1,6 +1,6 @@
 'use strict';
 
-module.export = class Queue {
+module.exports = class Queue {
   enqueue() {
     Array.prototype.push.apply(this, arguments);
     return this;

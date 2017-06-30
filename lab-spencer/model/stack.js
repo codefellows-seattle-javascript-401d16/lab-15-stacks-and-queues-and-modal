@@ -2,13 +2,15 @@
 
 const SLL = require('./singly-linked-list.js');
 
-module.exports = class Stack {
+const Stack = module.exports = class Stack {
   constructor() {
     this.head = null;
   }
 
   push(value) {
     let next = new SLL(value);
+    if(!value)
+      return;
     if(!this.head) {
       this.head = next;
       return this;
