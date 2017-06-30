@@ -105,6 +105,11 @@ ol ol li, ul ol li { list-style: lower-alpha; }
 
 ol ul li, ul ul li { list-style: square; }
 
+hr {
+  height: 1px;
+  background: black;
+}
+
 a { color: #aaa; }
 
 a:hover { color: #777; }
