@@ -2,7 +2,7 @@
 
 const SLL = require('./singly-linked-list.js');
 
-const Stack = module.exports = class Stack {
+module.exports = class Stack {
   constructor() {
     this.head = null;
   }
