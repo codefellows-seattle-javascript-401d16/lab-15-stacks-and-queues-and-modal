@@ -1,0 +1,9 @@
+.modal {
+  position: fixed;
+  height: 100%;
+}
+
+.modal div {
+  width: 200px;
+  height: 200px;
+}
