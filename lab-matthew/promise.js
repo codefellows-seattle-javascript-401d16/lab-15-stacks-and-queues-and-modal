@@ -2,7 +2,7 @@
 
 const Queue = require('./queue.js');
 
-class Prom {
+class Promise {
   constructor(callback){
     this.successCallbacks = new Queue();
     this.failureCallbacks = new Queue();
@@ -29,11 +29,9 @@ class Prom {
       }
     }
 
-
     setTimeout(() => {
       callback(handleResolve.bind(this), handleReject.bind(this));
     }, 0);
-
   }
 
   then(callback){
@@ -48,33 +46,3 @@ class Prom {
     return this;
   }
 }
-
-
-let prom = new Prom((resolve, reject) => {
-  console.log('is this after the first then or catch ?');
-  reject(5);
-})
-.catch(err => {
-  console.log('yey an error', err);
-  return 100;
-})
-.then((val) => {
-  console.log('1 success', val);
-  return val + 1;
-})
-.then((val) => {
-  console.log('2 success', val);
-  return val + 1;
-})
-.then((val) => {
-  console.log('3 success', val);
-  return val + 1;
-})
-.catch(err => {
-  console.log('EROROROROORRR', err);
-});
-
-
-
-console.dir(prom, {depth:Infinity});
-console.log('Queue is type', typeof Queue);
