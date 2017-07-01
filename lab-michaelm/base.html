@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> cool modal </title>
+  <link type="text/css" rel="stylesheet" href="styles/reset.css" />
+  <link type="text/css" rel="stylesheet" href="styles/base.css" />
+</head>
+
+<body>
+
+  <h1> hello world - h1</h1>
+  <h2> hello world - h2</h2>
+  <h3> hello world - h3</h3>
+  <h4> hello world - h4</h4>
+  <h5> hello world - h5</h5>
+  <h6> hello world - h6</h6>
+
+  <blockquote>This is a blockquote</blockquote>
+
+  <pre>
+    This is a pre tag:
+    throttle = (fn, ms) => {
+      let ready = true;
+      return (...args) => {
+        if(ready){
+          ready = false
+          setTimeout(() => ready = true, ms)
+          return fn(...args)
+        }
+      }
+    }
+    </pre>
+
+  <button> click me </button>
+
+  <hr />
+
+  <form>
+    <label> example label </label>
+    <input type="text" />
+    <input type="text" placeholder="example placeholder" />
+
+    <textarea placeholder="feed me content"> </textarea>
+
+    <input type="submit" value="submit" />
+  </form>
+
+  <p>This is the end, <code>my only friend, the end. </code> It hurts to set you free.<strong> But you'll never follow me</strong> The end of laughter and soft lies.<em> The end of nights we tried to die.</em> This is the end.</p>
+
+
+  <ul>
+    <li>How many lawyers does it take to change a light bulb?</li>
+    <ul>
+      <li>One. Only it's his light bulb when he's done.</li>
+    </ul>
+    <li> Why did the germ cross the microscope?</li>
+    <ol>
+      <li> To get to the other slide.</li>
+    </ol>
+  </ul>
+
+  <ol>
+    <li>The abuse of greatness is when it disjoins remorse from power.</li>
+    <ol>
+      <li>-- William Shakespeare, "Julius Caesar"</li>
+    </ol>
+    <li>Why did the WASP cross the road?</li>
+    <ul>
+      <li>To get to the middle.</li>
+    </ul>
+  </ol>
+
+
+</body>
+
+</html>
