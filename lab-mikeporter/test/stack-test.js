@@ -1,7 +1,6 @@
 'use strict';
 
 const expect = require('expect');
-const SLL = require('../singleLinkedList.js');
 const Stack = require('../stack.js');
 
 describe('testing stack.js', () => {
