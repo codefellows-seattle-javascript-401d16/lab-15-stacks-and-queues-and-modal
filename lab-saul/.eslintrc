@@ -3,13 +3,12 @@
     "err": true,
     "req": true,
     "res": true,
-    "next": true
+    "next": true,
   },
   "env": {
-    "ecmaVersion": 6
     "node": true,
     "browser": true,
-    "mocha": true
+    "mocha": true,
   },
   "rules": {
     "no-console": "off",
@@ -19,11 +18,12 @@
     "quotes": ["error", "single", { "allowTemplateLiterals": true }]
   },
   "parserOptions": {
+    "ecmaVersion": 6,
     "ecmaFeatures": {
-    "modules": true,
-    "impliedStrict": true,
-    "experimentalObjectRestSpread": true
-  }
-},
+      "modules": true,
+      "impliedStrict": true,
+      "experimentalObjectRestSpread": true,
+    }
+  },
   "extends": "eslint:recommended"
 }

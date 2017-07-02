@@ -12,14 +12,14 @@ describe('Testing Stack Method', () => {
     stack.push(2);
     stack.push(3);
     expect(stack.head.next.next.value).toEqual(3);
-  })
+  });
   it('POP TEST should return inputs on opposite order, FILO', () => {
     let stack = new Stack;
     stack.push(1);
     stack.push(2);
     stack.push(3);
     expect(stack.pop()).toEqual(3);
-  })
+  });
   it('POP TEST, should return the last value after pops, FILO', () => {
     let stack = new Stack;
     stack.push(1);
@@ -31,5 +31,5 @@ describe('Testing Stack Method', () => {
     stack.pop();
     stack.pop();
     expect(stack.head.next.value).toEqual(2);
-  })
+  });
 });
