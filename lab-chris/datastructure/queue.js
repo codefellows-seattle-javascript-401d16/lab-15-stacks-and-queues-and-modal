@@ -1,12 +1,12 @@
-'use strict'
+'use strict';
 
-class Queue {
+module.exports = class Queue {
   enqueue(){
-    Array.prototype.unshift.apply(this, arguments)
-    return this
+    Array.prototype.unshift.apply(this, arguments);
+    return this;
   }
 
   dequeue(){
-    return Array.prototype.pop.call(this)
+    return Array.prototype.pop.call(this);
   }
-}
+};

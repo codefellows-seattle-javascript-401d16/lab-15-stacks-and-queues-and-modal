@@ -1,58 +1,41 @@
 'use strict';
 
-class SLL {
-  constructor(value, next=null){
-    this.value = value
-    this.next=next
-  }
+const SLL = require('./sll.js');
 
-  appendNode(node){
-    if(!(node instanceof SLL))
-      throw new Error('must append a SLL node')
-    if(!this.next){
-      this.next = node;
-      return
-    }
-
-    this.next.appendNode(node)
-  }
-}
-
-
-class Stack {
+module.exports = class Stack {
   constructor(){
     this.head = null;
   }
 
   push(value){
-    let next = new SLL(value)
+    let next = new SLL(value);
     if(!this.head){
       this.head = next;
       return this;
     }
 
-    this.head.appendNode(next)
-    return this
+    this.head.appendNode(next);
+    return this;
   }
 
   pop(){
     if(!this.head)
-      return
+      return;
     let result = this.head;
     if(!result.next){
       this.head = null;
-      return result.value
+      return result.value;
     }
 
-    let tail = this.head
-    result = result.next
+    let tail = this.head;
+    result = result.next;
 
     while(result.next){
       tail = tail.next;
-      result = result.next
+      result = result.next;
     }
 
-    tail.next = null
-    return result.value
+    tail.next = null;
+    return result.value;
   }
-}
+};
