@@ -6,6 +6,7 @@ module.exports = class SLL {
     this.next = next;
   }
 
+  //O(n)
   appendNode(node){
     if(!(node instanceof SLL))
       throw new Error('parameter must be instance of SLL');

@@ -1,12 +1,13 @@
 'use strict';
 
-const SLL = require('./SLL.js');
+const SLL = require('./singly-linked-list.js');
 
 module.exports = class Stack {
   constructor(){
     this.head = null;
   }
 
+  //O(n)
   push(value) {
     let next = new SLL(value);
     if(!this.head){
@@ -14,16 +15,17 @@ module.exports = class Stack {
       return this;
     }
 
-    this.appendNode(next);
+    this.head.appendNode(next);
     return this;
   }
 
+  //O(n)
   pop() {
     if(!this.head){
       return;
     }
     let result = this.head;
-    if(!this.next){
+    if(!result.next){
       this.head = null;
       return result;
     }
