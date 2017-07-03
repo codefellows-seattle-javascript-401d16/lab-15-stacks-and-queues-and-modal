@@ -42,6 +42,33 @@ class Stack {
       this.head = next;
       return this;
     }
+    //if there is a head, construct a new node and append to the tail
+    this.head.appendNode(next);
+    return this;
+  }
 
+  // taking nodes off of the stack, start of pop
+  pop(){
+    //check if there's a head/list at all
+    if (!this.head) return;
+    //check if there's only a head and no other nodes
+    if (!this.head.next) {
+      this.head = null;
+      //return the value
+      return this.head.value;
+    }
+    //create a slow and fast track
+    let slow = this.head;
+    //assign result
+    let result = this.head.next;
+    //advance slow and result pointers until the tail is found at null
+    while (result.next) {
+      slow = slow.next;
+      result = result.next;
+    }
+    //assign the slow pointers next property to null as it's the new tail
+    slow.next = null;
+    //return the value to pop off
+    return result.value;
   }
 }
