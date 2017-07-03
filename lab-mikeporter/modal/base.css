@@ -1,0 +1,102 @@
+
+title, script, link {
+  display: none;
+}
+
+
+body {
+  position: relative;
+  display: block;
+}
+
+p {
+  display: block;
+}
+pre {
+  white-space: pre;
+}
+
+hr {
+  padding: 2.5%;
+}
+span, em, strong {
+  display: inline;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: purple;
+  text-decoration: underline;
+}
+a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+label {
+  display: block;
+  font-size: 1.25em;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+}
+
+textarea, input {
+  padding: 0.5em;
+  border: 1px solid gray;
+  margin-bottom: 0.5em;
+}
+
+textarea:focus, input:focus {
+  border: 1px solid blue;
+}
+
+button {
+  border: 1px solid black;
+}
+
+button:hover {
+  border: 1px solid blue;
+  background: gray;
+}
+
+h1 {
+  display: block;
+  font-size: calc(1em * 2.2);
+}
+
+h2 {
+  display: block;
+  font-size: calc(1em * 1.9);
+}
+
+h3 {
+  display: block;
+  font-size: calc(1em * 1.6);
+}
+
+h4 {
+  display: block;
+  font-size: calc(1em * 1.4);
+}
+
+h5 {
+  display: block;
+  font-size: calc(1em * 1.2);
+}
+
+h6 {
+  display: block;
+  font-size: calc(1em * 1.1);
+}
