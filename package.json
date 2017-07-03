@@ -1,0 +1,27 @@
+{
+  "name": "lab-stephanie",
+  "version": "1.0.0",
+  "description": "DSA lab 3",
+  "main": "queue.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslintrc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephanieDover/lab-15-stacks-and-queues-and-modal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephanieDover/lab-15-stacks-and-queues-and-modal/issues"
+  },
+  "homepage": "https://github.com/StephanieDover/lab-15-stacks-and-queues-and-modal#readme",
+  "dependencies": {
+    "eslint": "^4.1.1",
+    "expect": "^1.20.2",
+    "express": "^4.15.3",
+    "mocha": "^3.4.2"
+  }
+}
