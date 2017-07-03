@@ -7,8 +7,7 @@ class Queue {
   }
 
   dequeue() {
-    Array.prototype.pop.call(this);
-    return this;
+    return Array.prototype.pop.call(this);
   }
 }
 
