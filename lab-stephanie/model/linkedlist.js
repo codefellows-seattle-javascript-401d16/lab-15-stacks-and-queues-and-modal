@@ -1,9 +1,9 @@
 'use strict';
 //all funtions are O(n)
-class LinkedList {
-  constructor(value) {
+module.exports = class LinkedList {
+  constructor(value, next = null) {
     this.value = value;
-    this.next = null;
+    this.next = next;
   }
 
   appendNode(node) {
@@ -58,6 +58,4 @@ class LinkedList {
     }
     return slow;
   }
-}
-
-module.exports = LinkedList;
+};

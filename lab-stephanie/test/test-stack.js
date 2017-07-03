@@ -2,21 +2,23 @@
 
 const expect = require('expect');
 const Stack = require('../model/stack.js');
+const LinkedList = require('../model/linkedlist.js');
 
 describe('testing stack methods', () => {
   let stack = new Stack();
   describe('testing push', () => {
-    stack.push(1).push(2).push(3);
+    stack.push(1);
     it('should equal 1', () => {
-      expect(stack.value).toEqual(1);
-      expect(stack.next.value).toEqual(2);
-      expect(stack.next.next.value).toEqual(3);
+      console.log(stack);
+      expect(stack.head).toEqual(new LinkedList(1));
     });
   });
   describe('testing pop', () => {
-    stack.pop.pop;
-    it('should equal 3', () => {
-      expect(stack.value).toEqual(3);
+    let tempStack = new Stack();
+    tempStack.push(1);
+    tempStack.pop();
+    it('should equal null', () => {
+      expect(tempStack.head).toEqual(null);
     });
   });
 });

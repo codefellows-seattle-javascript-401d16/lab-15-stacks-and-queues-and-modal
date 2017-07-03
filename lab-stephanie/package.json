@@ -2,7 +2,7 @@
   "name": "lab-stephanie",
   "version": "1.0.0",
   "description": "DSA lab 3",
-  "main": "queue.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha",
     "lint": "eslintrc"

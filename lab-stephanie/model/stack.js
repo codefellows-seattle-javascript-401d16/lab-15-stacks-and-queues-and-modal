@@ -10,12 +10,16 @@ class Stack {
   push(value) {
     let next = new LinkedList(value);
     if (!value) return;
-    if (!this.head) this.head = next;
+    if (!this.head) {
+      this.head = next;
+      return this;
+    }
     this.head.appendNode(next);
     return this;
   }
 
   pop() {
+    console.log('cats');
     if (!this.head) return;
     let result = this.head;
     if (!result.next) {
