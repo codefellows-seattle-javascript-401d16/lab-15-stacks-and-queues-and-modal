@@ -1,14 +1,6 @@
 'use strict';
-
-class Queue {
-  enqueue() {
-    Array.prototype.unshift.apply(this, arguments);
-    return this;
-  }
-  dequeue() {
-    return Array.prototype.pop.call(this);
-  }
-}
+//all funtions are O(n)
+const Queue = require('./queue.js');
 
 class Prom {
   constructor(callback) {
@@ -52,4 +44,4 @@ class Prom {
   }
 }
 
-const Que = (module.exports = {});
+module.exports = Prom;
