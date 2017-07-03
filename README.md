@@ -10,6 +10,13 @@
   * write a question and observation on canvas
 
 ## Description
+
+  * write at least three tests for each method that you've written
+  * complete the Stack data structure by adding a `pop()` and `peek()` method DONE
+  * complete the Queue data structure by adding an `dequeue()` method DONE
+  * implement Balanced Brackets using a Stack; from your whiteboard exercise
+  * in comments above or within each function, note the Big-O runtime
+
 #### CSS CHALLENGE
 * create a base css for the following tags body, p, pre, span, a, blockquote, hr, strong, em, form, input, button, textarea, h1-h6, and any others you feel like
  * create a modal class 
@@ -21,6 +28,7 @@
 # Testing
 * Test your stack methods
 * Test your queue methods
+
 
 ## Bonus Points:
 * 1pt Implement your stack using a SinglyLinkedList

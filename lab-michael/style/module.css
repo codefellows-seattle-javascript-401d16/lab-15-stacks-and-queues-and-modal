@@ -1,0 +1,39 @@
+/* module */
+
+.bubble {
+  padding: 0.5em;
+}
+
+.primary {
+  background: #74D5FF;
+}
+
+.hide {
+  display: none;
+}
+
+
+.modal {
+  position: fixed;
+  height: 100%;
+  background: rgba(100, 100, 100, 0.7);
+}
+
+.modal main {
+  position: fixed;
+  padding: 1em;
+  height: 50%;
+  width: 50%;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal button {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  width: auto;
+  padding: 1em;
+}
