@@ -1,12 +1,12 @@
 'use strict';
 
 class Queue {
-  enqueue() {
+  enqueue() { // big O O(1)
     Array.prototype.unshift.apply(this, arguments);
     return this;
   }
 
-  dequeue() {
+  dequeue() { // big O O(1)
     return Array.prototype.pop.call(this);
   }
 }

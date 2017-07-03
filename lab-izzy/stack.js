@@ -24,7 +24,7 @@ class Stack {
     this.head = null;
   }
 
-  push(value) {
+  push(value) { // big O O(1)
     let next = new SLL(value);
     if(!this.head) {
       this.head = next;
@@ -36,7 +36,7 @@ class Stack {
 
   }
 
-  pop() {
+  pop() { // big O O(n)
     if(!this.head)
       return;
     let result = this.head;
