@@ -1,13 +1,13 @@
 'use strict';
 
-calss Queue {
+class Queue {
   engueue() {
     Array.prototype.unshift.apply(this, arguments)
     return this
   }
 
   dequeue() {
-    return.Array.prototype.pop.call(this)
+    return Array.prototype.pop.call(this)
   }
 }
 
@@ -46,7 +46,7 @@ class Prom {
   then(callback){
     console.log('register then')
     this.failureCallbacks.enqueue(callback);
-    return.this;
+    return this;
   }
   catch(callback){
     console.log('register catch')

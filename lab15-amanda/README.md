@@ -19,7 +19,7 @@
 * Implement a queue constructor with `enqueue` and `dequeue` methods
 
 # Testing
-* Test your stack methods
+* Test your stack methods //how do I test this?
 * Test your queue methods
 
 ## Bonus Points:
