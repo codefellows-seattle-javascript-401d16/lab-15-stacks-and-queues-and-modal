@@ -15,4 +15,28 @@
    position: relative;
  }
 
- 
+ p, pre {
+   display: inline-block;
+  }
+
+span, strong, em {
+  display: inline;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  display: inline;
+}
+
+blockquote {
+  display: block;
+  padding-left: 1em;
+  border-left: 0.5 solid #bbb;
+}
