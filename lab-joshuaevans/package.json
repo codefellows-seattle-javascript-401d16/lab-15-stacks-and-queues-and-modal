@@ -1,0 +1,18 @@
+{
+  "name": "lab-joshuaevans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "queue.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
+}
