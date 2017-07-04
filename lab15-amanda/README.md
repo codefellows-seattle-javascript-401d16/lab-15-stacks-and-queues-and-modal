@@ -1,4 +1,6 @@
-![cf](http://i.imgur.com/7v5ASc8.png) lab 15 - Modal and Stacks & Queues Data Structure
+I DO NOT UNDERSTAND THE JS PART OF THIS LAB *AT ALL*.
+
+lab 15 - Modal and Stacks & Queues Data Structure
 ====
 
 ## To Submit this Assignment
@@ -19,7 +21,7 @@
 * Implement a queue constructor with `enqueue` and `dequeue` methods
 
 # Testing
-* Test your stack methods //how do I test this?
+* Test your stack methods
 * Test your queue methods
 
 ## Bonus Points:
