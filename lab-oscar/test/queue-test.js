@@ -1,7 +1,7 @@
 'use strict';
 
 const expect = require('expect');
-const Queue = require('./Queue.js');
+const Queue = require('../Queue.js');
 
 describe('testing Queue and Stack functions', () => {
   describe('testing Queue', () => {
