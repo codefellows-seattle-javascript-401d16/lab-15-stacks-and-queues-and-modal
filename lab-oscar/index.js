@@ -18,8 +18,8 @@ let newQ = new Queue();
 
 newQ.enqueue({name: 'oscar'});
 newQ.enqueue({name: 'jorge'});
-newQ.dequeue();
-console.log(newQ);
+// newQ.dequeue();
+console.log('end', newQ);
 
 class Stack {
   add() {
