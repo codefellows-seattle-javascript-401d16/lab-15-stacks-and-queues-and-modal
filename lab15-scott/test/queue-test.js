@@ -16,15 +16,10 @@ describe('Testing the QUEUE constructor', () => {
       let classQueue = new Queue();
       classQueue.enqueue(5);
       classQueue.enqueue(3);
-      console.log('classQueue: ', classQueue);
-      console.log('classQueue.length: ', classQueue.length);
       expect(classQueue.length).toEqual(2);
       expect(classQueue[0]).toEqual(3);
       expect(classQueue[1]).toEqual(5);
       let remove = classQueue.dequeue();
-      console.log('dequeue: ', classQueue.dequeue());
-      expect(classQueue.dequeue()).toEqual(undefined);
-      console.log('break');
       expect(remove).toEqual(5);
     });
   });

@@ -11,7 +11,6 @@ module.exports = class Queue {
     //it should apply the arguments to the beginning/front of the array prototype
     Array.prototype.unshift.apply(this, arguments);
     //return the combined array
-    console.log('this in queue: ', this);
     return this;
   }
 
