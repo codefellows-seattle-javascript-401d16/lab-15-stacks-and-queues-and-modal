@@ -6,9 +6,26 @@ const expect = require('expect');
 describe('Testing the QUEUE constructor', () => {
   describe('If putting something on to the queue', () => {
     it('it should return with a 5 at the beginning of the array', () => {
-      let newQueue = new Queue();
-      newQueue.enqueue(5);
-      expect(newQueue[0]).toEqual(5);
-    })
+      let classQueue = new Queue();
+      classQueue.enqueue(5);
+      expect(classQueue [0]).toEqual(5);
+    });
+  });
+  describe('If removing something from the queue', () => {
+    it('it should return with a 3', () => {
+      let classQueue = new Queue();
+      classQueue.enqueue(5);
+      classQueue.enqueue(3);
+      console.log('classQueue: ', classQueue);
+      console.log('classQueue.length: ', classQueue.length);
+      expect(classQueue.length).toEqual(2);
+      expect(classQueue[0]).toEqual(3);
+      expect(classQueue[1]).toEqual(5);
+      let remove = classQueue.dequeue();
+      console.log('dequeue: ', classQueue.dequeue());
+      expect(classQueue.dequeue()).toEqual(undefined);
+      console.log('break');
+      expect(remove).toEqual(5);
+    });
   });
 });

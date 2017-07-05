@@ -11,14 +11,15 @@ module.exports = class Queue {
     //it should apply the arguments to the beginning/front of the array prototype
     Array.prototype.unshift.apply(this, arguments);
     //return the combined array
+    console.log('this in queue: ', this);
     return this;
-  };
+  }
 
   //big o = O(1)
   dequeue(){
     //return the prototype array with and invoke the pop method on it
     //use the call function since you don't need to attaach an array of arguments to it
     //it will take in THIS and remove the last element and pop it off of the Queue
-    Array.prototype.pop.call(this);
-  };
+    return Array.prototype.pop.call(this);
+  }
 };
