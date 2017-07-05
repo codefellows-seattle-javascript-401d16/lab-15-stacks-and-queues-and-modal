@@ -1,7 +1,9 @@
 'use strict';
 
 //create queue class with methods on it
-class Queue(){
+
+module.exports = class Queue {
+//big o = O(1)
   enqueue(){
     //create a new prototype on the Array constructor
     //use the unshift method to add arguments to the beginning of the Array
@@ -12,6 +14,7 @@ class Queue(){
     return this;
   };
 
+  //big o = O(1)
   dequeue(){
     //return the prototype array with and invoke the pop method on it
     //use the call function since you don't need to attaach an array of arguments to it
