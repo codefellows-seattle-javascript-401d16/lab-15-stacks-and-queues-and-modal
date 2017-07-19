@@ -7,6 +7,7 @@ module.exports = class Stack {
     this.head = null;
   }
 
+  // O(1)
   push(value){
     let next = new SLL(value);
     if(!this.head){
@@ -18,6 +19,7 @@ module.exports = class Stack {
     return this;
   }
 
+  // O(n)
   pop(){
     if(!this.head)
       return;

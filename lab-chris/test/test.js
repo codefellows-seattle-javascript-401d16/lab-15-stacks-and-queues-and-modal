@@ -15,6 +15,7 @@ describe('Testing queue', () => {
       expect(queue[1]).toNotExist();
     });
   });
+  
   describe('Testing dequeue', () => {
     it('should remove a node from the queue', () => {
       let queue = new Queue();
@@ -50,6 +51,7 @@ describe('Testing stack', () => {
       expect(stack.head.next.value).toEqual('dog');
     });
   });
+
   describe('Testing pop', () => {
     it('should remove a node from the stack', () => {
       let stack = new Stack();

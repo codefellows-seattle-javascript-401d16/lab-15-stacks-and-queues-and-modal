@@ -6,6 +6,7 @@ module.exports = class SLL {
     this.next=next;
   }
 
+  // O(1)
   appendNode(node){
     if(!(node instanceof SLL))
       throw new Error('must append a SLL node');
