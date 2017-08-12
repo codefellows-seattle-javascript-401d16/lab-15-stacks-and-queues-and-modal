@@ -1,0 +1,25 @@
+{
+  "name": "lab-15-stacks-and-queues-and-modal",
+  "version": "1.0.0",
+  "description": "![cf](http://i.imgur.com/7v5ASc8.png) lab 15 - Modal and Stacks & Queues Data Structure ====",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0smium/lab-15-stacks-and-queues-and-modal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0smium/lab-15-stacks-and-queues-and-modal/issues"
+  },
+  "homepage": "https://github.com/0smium/lab-15-stacks-and-queues-and-modal#readme",
+  "devDependencies": {
+    "eslint": "^4.4.1",
+    "expect": "^1.20.2",
+    "mocha": "^3.5.0"
+  }
+}
