@@ -2,18 +2,19 @@
 
 //create a link list constructor to use in the stack process
 
-class singlyLL {
+class SinglyLL {
   constructor(value, next=null){
     //assign the value passing in to the value property
     this.value = value;
     //assign the next value to the next property, if empty then make it null
     this.next = next;
   }
-  //start the appending process
 
+  //big o = O(n)
+  //start the appending process
   appendNode(node){
     // if the node is not the same instance throw an error
-    if (!(node instanceof singlyLL)) {
+    if (!(node instanceof SinglyLL)) {
       throw new Error ('Please append a new node instance');
     }
     //set the node to the tail of the list where next = null
@@ -24,7 +25,6 @@ class singlyLL {
   }
 }
 
-
 //start of stack constructor
 
 class Stack {
@@ -32,11 +32,11 @@ class Stack {
     // start with no head
     this.head = null;
   }
-
+  //big o = O(n)
   //push method
   push(value){
     //assign next to the value passing in and create a new node
-    let next = new singlyLL(value);
+    let next = new SinglyLL(value);
     //if there is no head, make this the head
     if (!this.head) {
       this.head = next;
@@ -47,6 +47,7 @@ class Stack {
     return this;
   }
 
+  //big o = O(n)
   // taking nodes off of the stack, start of pop
   pop(){
     //check if there's a head/list at all
@@ -72,3 +73,8 @@ class Stack {
     return result.value;
   }
 }
+
+module.exports = {
+  SinglyLL : SinglyLL,
+  Stack : Stack,
+};
