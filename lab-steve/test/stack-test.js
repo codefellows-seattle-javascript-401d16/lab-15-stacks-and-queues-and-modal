@@ -3,7 +3,7 @@
 const expect = require('expect');
 const Stack = require('../stack.js');
 
-describe.only('Testing stack methods...', () => {
+describe('Testing stack methods...', () => {
   let stack;
   it('should add an item to the stack', () => {
     stack = new Stack(1);
