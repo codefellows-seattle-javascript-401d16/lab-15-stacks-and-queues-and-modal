@@ -1,0 +1,19 @@
+{
+  "name": "lab-nicu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3"
+  }
+}
