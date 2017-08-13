@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> DSA3 </title>
+  <link type="text/css" rel="stylesheet" href="styles/base.css" />
+</head>
+
+<body>
+  
+  <div class="modal">
+    <button class="close-modal"> X </button>
+    <main>
+      <h1> The Modal </h1>
+      <p> Bipboopbap </p>
+    </main>
+  </div>
+
+  <h1> This is an H1 </h1>
+  <h2> This is an H2 </h2>
+  <h3> This is an H3 </h3>
+  <h4> This is an H4 </h4>
+  <h5> This is an H5 </h5>
+  <h6> This is an H6 </h6>
+
+  <blockquote> BlockQuoutes </blockquote>
+
+  <button> Button </button>
+
+  <hr />
+
+  <form>
+    <label> example label </label>
+    <input type="text" />
+    <input type="text" placeholder="Sample Placeholder" />
+
+    <textarea placeholder="Text Area Placeholder"> </textarea>
+
+    <input type="submit" value="submit" />
+  </form>
+
+  <p> This Paragraph is <strong>AWESOME</strong> it's dope. Do you even <code>CODE?</code> Come at <em>ME</em></p>
+
+
+  <ul>
+    <li> Unordered List</li>
+    <li> Unordered List</li>
+  </ul>
+
+  <ol>
+    <li> Ordered List</li>
+    <li> Ordered List</li>
+  </ol>
+
+  <script type="text/javascript">
+    document.getElementsByClassName('close-modal')[0].addEventListener('click', closeModal);
+    console.log('script');
+    function closeModal(event){
+      console.log(event);
+      event.preventDefault();
+      document.getElementsByClassName('modal')[0].style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
