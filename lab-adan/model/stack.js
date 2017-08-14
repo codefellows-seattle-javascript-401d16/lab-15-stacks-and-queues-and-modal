@@ -1,6 +1,6 @@
 'use strict';
 
-const SLL = require('./singly-linked-list.js');
+const SLL = require('./sll.js');
 
 module.exports = class Stack {
   constructor() {
